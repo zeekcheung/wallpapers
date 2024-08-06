@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+target_dir=$HOME/Pictures
+mkdir -p "$target_dir" && install ./*.{jpg,png,jpeg,gif,heic} "$target_dir"
