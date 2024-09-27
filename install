@@ -3,4 +3,6 @@
 set -e
 
 target_dir=$HOME/Pictures
-mkdir -p "$target_dir" && install ./*.{jpg,png,jpeg,gif,heic} "$target_dir"
+wall=$HOME/Pictures/island-night.png
+
+mkdir -p "$target_dir" && install ./*.{jpg,png,jpeg,gif,heic} "$target_dir" && install "$wall" "$HOME"/Pictures/wall.png
